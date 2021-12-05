@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#D6E5E6"
+    app:layout_constraintCircleRadius="8dp"
+    tools:context=".recyclerView.UserDetail">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contraintlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/abubg"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_margin="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/tabs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/detail_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/detail_locationCity"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_name"
+            tools:text="@string/username" />
+
+        <TextView
+            android:id="@+id/detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="35dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.044"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_txt_followers"
+            tools:text="@string/nama" />
+
+        <TextView
+            android:id="@+id/detail_locationCity"
+            android:layout_width="105dp"
+            android:layout_height="17dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_type"
+            tools:text="@string/lokasi" />
+
+        <TextView
+            android:id="@+id/detail_txt_publicRepos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/repository"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_avatarUrl" />
+
+
+        <TextView
+            android:id="@+id/detail_publicRepos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="148dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/detail_txt_publicRepos"
+            app:layout_constraintStart_toStartOf="@id/detail_txt_publicRepos"
+            app:layout_constraintTop_toTopOf="@id/detail_avatarUrl"
+            tools:text="@string/jumlah" />
+
+        <TextView
+            android:id="@+id/detail_txt_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/followers"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/detail_txt_publicRepos"
+            app:layout_constraintHorizontal_bias="0.606"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/detail_avatarUrl" />
+
+        <TextView
+            android:id="@+id/detail_followers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="144dp"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/detail_txt_followers"
+            app:layout_constraintHorizontal_bias="0.363"
+            app:layout_constraintStart_toStartOf="@id/detail_txt_followers"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/jumlah" />
+
+        <TextView
+            android:id="@+id/detail_txt_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="21dp"
+            android:text="@string/following"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.581"
+            app:layout_constraintStart_toEndOf="@+id/detail_txt_publicRepos"
+            app:layout_constraintTop_toBottomOf="@+id/detail_avatarUrl" />
+
+        <TextView
+            android:id="@+id/detail_following"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="148dp"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@id/detail_txt_following"
+            app:layout_constraintHorizontal_bias="0.441"
+            app:layout_constraintStart_toStartOf="@id/detail_txt_following"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/jumlah" />
+
+        <ImageView
+            android:id="@+id/favorite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.841"
+            app:layout_constraintStart_toEndOf="@+id/detail_type"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/favorite" />
+
+        <ImageView
+            android:id="@+id/detail_avatarUrl"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="30dp"
+            android:contentDescription="@string/app_name"
+            tools:src="@tools:sample/avatars"
+            app:layout_constraintBottom_toTopOf="@+id/detail_txt_publicRepos"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@drawable/orang" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutMe"
+    android:background="#F3F6F6"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/aboutme"
+                android:layout_height="wrap_content"
+                android:text="@string/about_me"
+                android:padding="10dp"
+                android:layout_margin="30dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#FC000000"
+                android:textSize="25dp">
+            </TextView>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_below="@+id/aboutme"
+                android:layout_margin="30dp"
+                android:src="@drawable/photo" />
+
+            <LinearLayout
+                android:id="@+id/nama"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/nama" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/uji_khaidah_resti" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/jeniskelamin"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/asal"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/universitas_lampung"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/email"
+                android:layout_marginLeft="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/email"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/a2482353_bangkit_academy"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/buttonkembali"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email"
+                android:layout_gravity="center"
+                android:layout_margin="40dp"
+                android:text="@string/back"
+                android:textColor="#ffff"
+                android:textSize="11dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

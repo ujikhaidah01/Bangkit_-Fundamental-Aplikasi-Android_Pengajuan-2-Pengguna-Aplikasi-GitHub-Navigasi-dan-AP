@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Buah</string>
+    <string name="buah_app">Buah APP</string>
+    <string name="about_me">About Me</string>
+    <string name="nama">Name</string>
+
+
+    <string name="uji_khaidah_resti">Uji Khaidah Resti</string>
+    <string name="asal">From</string>
+    <string name="universitas_lampung">Lampung University</string>
+    <string name="email">Email</string>
+    <string name="a2482353_bangkit_academy">a2482353@bangkit.academy</string>
+    <string name="nama_buah">Nama Buah</string>
+    <string name="detail">Detail</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="buah_geh">Buah Geh</string>
+    <string name="search_hint">Name ...</string>
+    <string name="title_detail">Detail User</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string name="fav">Favorite</string>
+
+
+        //listview
+    <string name="namaApl">Dicoding2</string>
+    <string name="dicoding_2">Dicoding 2</string>
+    <string name="detail_user">Detail User</string>
+
+    <string name="username">Username</string>
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+    <string name="company">Company</string>
+    <string name="repository">Repository</string>
+    <string name="repositories">Repositories</string>
+    <string name="bekerja_pada">Bekerja Pada :</string>
+    <string name="followerssss">FOLLOWERS</string>
+    <string name="followingggg">FOLLOWING</string>
+    <string name="repositoryyyy">Repository</string>
+    <string name="dicoding2">Dicoding2</string>
+    <string name="like">Like</string>
+    <string name="search">Search</string>
+    <string name="daftar_nama">Daftar Nama</string>
+    <string name="not_have">Daftar %1$s Tidak ditemukan</string>
+    <string name="lokasi">Lokasi</string>
+    <string name="jumlah">0</string>
+    <string name="back">BACK</string>
+
+
+</resources>

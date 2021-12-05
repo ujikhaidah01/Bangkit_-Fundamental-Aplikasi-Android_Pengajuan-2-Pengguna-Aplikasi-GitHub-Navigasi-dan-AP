@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.buah">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/gambarsplash"
+        android:label="@string/namaApl"
+        android:roundIcon="@drawable/gambarsplash"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Buah">
+        <activity android:name=".recyclerView.UserDetail"
+            android:label="Detail"/>
+        <activity android:name=".recyclerView.MainUser"
+            android:label="Daftar Menu"/>
+        <activity
+            android:name=".listViewSubmit.NewActivity"
+            android:label="Detail Menu" />
+        <activity
+            android:name=".listViewSubmit.MenuSubmit"
+            android:label="Daftar Menu" />
+
+        <activity
+            android:name=".aboutMe"
+            android:label="Aboout Me" />
+        <activity
+            android:name=".splash"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="Welcome" />
+    </application>
+
+</manifest>

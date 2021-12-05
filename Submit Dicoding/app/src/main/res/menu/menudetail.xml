@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:menuCategory="container">
+        <item android:id="@+id/menu_home"
+            android:title="Halaman Utama" />
+        <item android:id="@+id/Pengaturanbahasa"
+            android:title="Pengaturan Bahasa" />
+        <item android:id="@+id/aboutme"
+            android:title="About Me" />
+
+    </group>
+    <item
+        android:id="@+id/like"
+        android:title="@string/fav"
+        android:icon="@drawable/like"
+        app:showAsAction="always"/>
+
+</menu>
